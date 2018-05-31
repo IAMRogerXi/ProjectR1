@@ -7701,11 +7701,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\Github\\ProjectR1\\ProjectR1\\ProjectR1API\\ProjectR1API\\ProjectR1API\\ProjectR1API.csproj",
+      "projectUniqueName": "E:\\Github\\ProjectR1\\ProjectR1\\ProjectR1API\\ProjectR1API\\ProjectR1API.csproj",
       "projectName": "ProjectR1API",
-      "projectPath": "E:\\Github\\ProjectR1\\ProjectR1\\ProjectR1API\\ProjectR1API\\ProjectR1API\\ProjectR1API.csproj",
+      "projectPath": "E:\\Github\\ProjectR1\\ProjectR1\\ProjectR1API\\ProjectR1API\\ProjectR1API.csproj",
       "packagesPath": "C:\\Users\\roxi\\.nuget\\packages\\",
-      "outputPath": "E:\\Github\\ProjectR1\\ProjectR1\\ProjectR1API\\ProjectR1API\\ProjectR1API\\obj\\",
+      "outputPath": "E:\\Github\\ProjectR1\\ProjectR1\\ProjectR1API\\ProjectR1API\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
