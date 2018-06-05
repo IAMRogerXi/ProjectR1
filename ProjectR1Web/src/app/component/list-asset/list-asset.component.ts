@@ -1,8 +1,8 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { MatPaginator, MatTableDataSource } from '@angular/material';
 import { MatTableModule } from '@angular/material/table';
-import { Asset } from '../../model/asset';
-import { AssetService } from '../../service/asset.service';
+import { Asset } from '@model/asset';
+import { AssetService } from '@service/asset.service';
 
 @Component({
   selector: 'app-list-asset',
