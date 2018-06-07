@@ -1,7 +1,6 @@
-import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { AssetModule } from '@component/asset/asset.module'
-
+import { BrowserModule } from '@angular/platform-browser';
+import { AssetModule } from '@module/asset/asset.module';
 import { AppComponent } from './app.component';
 
 @NgModule({

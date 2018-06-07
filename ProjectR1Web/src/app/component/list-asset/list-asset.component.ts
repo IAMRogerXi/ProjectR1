@@ -1,6 +1,5 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { MatPaginator, MatTableDataSource } from '@angular/material';
-import { MatTableModule } from '@angular/material/table';
 import { Asset } from '@model/asset';
 import { AssetService } from '@service/asset.service';
 
@@ -25,6 +24,6 @@ export class ListAssetComponent implements OnInit {
 }
 
 const ELEMENT_DATA: Asset[] = [
-  { id: '1', tag: '1', name: '1', location: '1', assetOwner: '1' },
-  { id: '2', tag: '2', name: '2', location: '2', assetOwner: '2' }
+  { id: '1', tag: '1', name: '1', location: '1', assetOwner: '1', created: '', createdBy: '', modified: '', modifiedBy:'' },
+  { id: '2', tag: '2', name: '2', location: '2', assetOwner: '2', created: '', createdBy: '', modified: '', modifiedBy:'' }
 ];

@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { ListAssetComponent } from '@component/list-asset/list-asset.component'
 
 @Component({
   selector: 'app-root',
