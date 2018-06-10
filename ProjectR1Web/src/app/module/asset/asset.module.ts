@@ -1,8 +1,8 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {
   MatAutocompleteModule,
   MatBadgeModule,
@@ -40,19 +40,19 @@ import {
   MatTooltipModule,
   MatTreeModule
 } from '@angular/material';
-import { ListAssetComponent } from '@component/list-asset/list-asset.component';
+import { ListAssetComponent } from '@pages/list-asset/list-asset.component';
 
 @NgModule({
   imports: [
     CommonModule,
+    HttpClientModule,
     BrowserAnimationsModule,
     FormsModule,
-    HttpClientModule,
     ReactiveFormsModule,
     MatNativeDateModule,
-    MatTableModule,
+    MatPaginatorModule,
     MatSortModule,
-    MatPaginatorModule
+    MatTableModule
   ],
   exports: [
     ListAssetComponent
