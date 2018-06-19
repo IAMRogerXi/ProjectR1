@@ -14,9 +14,6 @@
       ],
       "@shared/*": [
         "app/shared/*"
-      ],
-      "@module/*": [
-        "app/module/*"
       ]
     },
     "outDir": "./dist/out-tsc",

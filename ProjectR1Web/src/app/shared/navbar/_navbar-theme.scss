@@ -4,11 +4,10 @@
   $warn: map-get($theme, warn);
   $background: map-get($theme, background);
   $foreground: map-get($theme, foreground);
-
   app-navbar {
     color: mat-color($primary, default-contrast);
-
-    .docs-navbar, .docs-navbar-header {
+    .docs-navbar,
+    .docs-navbar-header {
       background: mat-color($primary);
     }
   }

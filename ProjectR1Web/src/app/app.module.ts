@@ -1,17 +1,19 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { AssetModule } from '@module/asset/asset.module';
+import { NavBarModule } from '@shared/navbar';
+import { AssetListModule } from '@pages/list-asset';
 import { AppComponent } from './app.component';
-import { NavBar } from '@pages/navbar';
+import { AddAssetComponent } from './add-asset/add-asset.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    NavBar
+    AddAssetComponent
   ],
   imports: [
     BrowserModule,
-    AssetModule
+    NavBarModule,
+    AssetListModule
   ],
   providers: [],
   bootstrap: [AppComponent]

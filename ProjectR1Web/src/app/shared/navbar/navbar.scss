@@ -3,8 +3,7 @@
   flex-wrap: wrap;
   align-items: center;
   padding: 8px 16px;
-
-  > .mat-button {
+  >.mat-button {
     &:last-child {
       margin-left: auto;
     }
@@ -44,19 +43,17 @@
   * Rules for when the device is detected to be a small screen.
   * Moves content two rows instead of one.
   */
+
 @media (max-width: 720px) {
   .docs-navbar-hide-small {
     display: none;
   }
-
   .docs-navbar-show-small {
     display: block;
   }
-
   .docs-navbar {
     display: flex;
   }
-
   .docs-navbar--github-logo {
     margin: 0;
   }

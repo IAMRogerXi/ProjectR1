@@ -1,10 +1,7 @@
 import { Component, NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { MatButtonModule, MatMenuModule } from '@angular/material';
 import { RouterModule } from '@angular/router';
-import { SECTIONS } from '../documentation-items/documentation-items';
-
-const SECTIONS_KEYS = Object.keys(SECTIONS);
+import { MatButtonModule, MatMenuModule } from '@angular/material';
 
 @Component({
   selector: 'app-navbar',
@@ -12,13 +9,6 @@ const SECTIONS_KEYS = Object.keys(SECTIONS);
   styleUrls: ['./navbar.scss']
 })
 export class NavBar {
-  get sections() {
-    return SECTIONS;
-  }
-
-  get sectionKeys() {
-    return SECTIONS_KEYS;
-  }
 }
 
 @NgModule({
@@ -29,6 +19,6 @@ export class NavBar {
     CommonModule
   ],
   exports: [NavBar],
-  declarations: [NavBar],
+  declarations: [NavBar]
 })
 export class NavBarModule { }
