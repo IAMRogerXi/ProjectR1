@@ -1,7 +1,8 @@
 import { Component, NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
-import { MatButtonModule, MatMenuModule } from '@angular/material';
+import { MatButtonModule, MatMenuModule, MatIconModule } from '@angular/material';
+import { ThemePickerModule } from '@shared/theme-picker';
 
 @Component({
   selector: 'app-navbar',
@@ -13,12 +14,16 @@ export class NavBar {
 
 @NgModule({
   imports: [
+    CommonModule,
+    RouterModule,    
     MatButtonModule,
     MatMenuModule,
-    RouterModule,
-    CommonModule
+    MatIconModule,
+    ThemePickerModule
   ],
   exports: [NavBar],
-  declarations: [NavBar]
+  declarations: [
+    NavBar
+  ]
 })
 export class NavBarModule { }

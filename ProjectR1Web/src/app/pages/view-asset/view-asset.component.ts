@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, NgModule } from '@angular/core';
 
 @Component({
   selector: 'app-view-asset',
@@ -11,5 +11,17 @@ export class ViewAssetComponent implements OnInit {
 
   ngOnInit() {
   }
+
+}
+
+@NgModule({
+  exports: [
+    ViewAssetComponent
+  ],
+  declarations: [
+    ViewAssetComponent
+  ]
+})
+export class ViewAssetModule {
 
 }

@@ -1,10 +1,20 @@
 <nav class="docs-navbar-header">
+  <button mat-icon-button [matMenuTriggerFor]="menu">
+    <mat-icon>menu</mat-icon>
+  </button>
+  <mat-menu #menu="matMenu">
+    <button mat-menu-item>
+      <mat-icon>note_add</mat-icon>
+      <span>Asset Details</span>
+    </button>
+    <button mat-menu-item>
+      <mat-icon>settings</mat-icon>
+      <span>Settings</span>
+    </button>
+  </mat-menu>
   Warehouse Master from TBLStudio
-  <!-- <a mat-button class="docs-navbar-hide-small docs-button"
-     *ngFor="let key of sectionKeys"
-     [routerLink]="key">{{sections[key]}}</a>
-  <a mat-button class="docs-navbar-hide-small docs-button" routerLink="guides">Guides</a> -->
   <div class="flex-spacer"></div>
+  <theme-picker></theme-picker>
 </nav>
 <nav class="docs-navbar docs-navbar-show-small">
   <!-- <a mat-button class="docs-navbar-link"
