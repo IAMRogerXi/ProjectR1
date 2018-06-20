@@ -1,7 +1,8 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { NavBarModule } from '@shared/navbar';
-import { AssetListModule } from '@pages/list-asset';
+import { ListAssetModule } from '@pages/list-asset';
+import { AddAssetModule } from '@pages/add-asset';
 import { AppComponent } from './app.component';
 
 @NgModule({
@@ -11,7 +12,8 @@ import { AppComponent } from './app.component';
   imports: [
     BrowserModule,
     NavBarModule,
-    AssetListModule
+    ListAssetModule,
+    AddAssetModule
   ],
   providers: [],
   bootstrap: [AppComponent]

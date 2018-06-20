@@ -21,8 +21,8 @@ export class AssetService {
     return null;
   }
 
-  public addAsset(asset: Asset){
-
+  public addAsset(asset: Asset) {
+    this.assets.push(asset);
   }
 
 }

@@ -12,6 +12,9 @@ export class AddAssetComponent implements OnInit {
   constructor(private assetService: AssetService) { }
 
   ngOnInit() {
+    let asset = { id: '3', tag: '3', name: '3', location: '3', assetOwner: '3', created: '', createdBy: 'ROXI', modified: '', modifiedBy: '' };
+
+    this.assetService.addAsset(asset);
   }
 
 }
