@@ -33,7 +33,6 @@ export class AddAssetComponent implements OnInit {
     });
 
     dialogRef.afterClosed().subscribe(result => {
-      console.log('The dialog was closed');
       this.asset.name = result;
       this.assetService.addAsset(this.asset);
       this.asset = new Asset();

@@ -11,6 +11,7 @@ import {
   MatTableModule,
 } from '@angular/material';
 import { MatPaginator, MatTableDataSource } from '@angular/material';
+import { AddAssetModule } from '@pages/add-asset';
 import { Asset } from '@model/asset';
 import { AssetService } from '@service/asset.service';
 
@@ -45,7 +46,8 @@ export class ListAssetComponent implements OnInit {
     MatPaginatorModule,
     MatSortModule,
     MatTableModule,
-    MatButtonModule
+    MatButtonModule,
+    AddAssetModule
   ],
   exports: [
     ListAssetComponent
