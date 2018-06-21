@@ -1,0 +1,16 @@
+<div mat-dialog-content>
+  <form #assetForm="ngForm">
+    <div class="form-group">
+      <label for="name">Name</label>
+      <input id="name" name="name" #name="ngModel" type="text" class="form-control" required [(ngModel)]="data.name" />
+      <div *ngIf="name.invalid && (name.dirty || name.touched)" class="alert alert-danger">
+        Name is required
+      </div>
+    </div>
+  </form>
+</div>
+
+<div mat-dialog-actions>
+  <button mat-raised-button class="btn btn-success" [disabled]="!assetForm.form.valid" [mat-dialog-close]="data.name">Save</button>
+  <button mat-button (click)="onNoClick() ">Close</button>
+</div>
