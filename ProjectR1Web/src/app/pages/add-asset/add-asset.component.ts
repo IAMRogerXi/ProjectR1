@@ -1,13 +1,12 @@
-import { NgModule, Component, OnInit, Inject } from '@angular/core';
+import { NgModule, Component, OnInit } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
 import {
   MatButtonModule,
   MatDialogModule,
-  MatDialog,
-  MatDialogRef,
-  MAT_DIALOG_DATA
+  MatDialog
 } from '@angular/material';
+import { AddAssetDialog } from '@pages/add-asset/add-asset-dialog/add-asset-dialog.component'
 import { Asset } from '@model/asset';
 import { AssetService } from '@service/asset.service';
 
@@ -39,22 +38,6 @@ export class AddAssetComponent implements OnInit {
       this.assetService.addAsset(this.asset);
       this.asset = new Asset();
     });
-  }
-
-}
-
-@Component({
-  selector: 'add-asset-dialog',
-  templateUrl: 'add-asset-dialog.html',
-})
-export class AddAssetDialog {
-
-  constructor(
-    public dialogRef: MatDialogRef<AddAssetDialog>,
-    @Inject(MAT_DIALOG_DATA) public data: any) { }
-
-  onNoClick(): void {
-    this.dialogRef.close();
   }
 
 }
